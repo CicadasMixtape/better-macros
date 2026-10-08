@@ -10,7 +10,7 @@ object MacroManager {
     val macroList = MacroList()
 
     fun onTick() {
-        if (BetterMacrosBinding.BINDING.isDown && mc.screen !is BetterMacrosScreen) {
+        if (BetterMacros.BINDING.isDown && mc.screen !is BetterMacrosScreen) {
             mc.setScreen(Screens.BETTER_MACROS)
         }
     }
