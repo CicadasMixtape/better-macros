@@ -1,0 +1,16 @@
+{
+  "key.category.bettermacros.keys": "BetterMacros",
+
+  "key.bettermacros.openmenu": "Открытие меню",
+
+  "bettermacros.add": "Добавить",
+  "bettermacros.edit": "Редактировать",
+  "bettermacros.delete": "Удалить",
+  "bettermacros.save": "Сохранить",
+
+  "bettermacros.name": "Название",
+  "bettermacros.code": "Клавиша",
+  "bettermacros.command": "Команда",
+
+  "bettermacros.are_you_sure": "Вы уверены?"
+}

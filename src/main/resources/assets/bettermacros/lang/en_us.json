@@ -1,0 +1,16 @@
+{
+  "key.category.bettermacros.keys": "BetterMacros",
+
+  "key.bettermacros.openmenu": "Open menu",
+
+  "bettermacros.add": "Add",
+  "bettermacros.edit": "Edit",
+  "bettermacros.delete": "Delete",
+  "bettermacros.save": "Save",
+
+  "bettermacros.name": "Name",
+  "bettermacros.code": "Key",
+  "bettermacros.command": "Command",
+
+  "bettermacros.are_you_sure": "Are you sure?"
+}

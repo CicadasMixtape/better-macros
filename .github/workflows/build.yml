@@ -1,0 +1,37 @@
+name: build
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: jdk setup
+        uses: actions/setup-java@v5
+        with:
+          java-version: "21"
+          distribution: "temurin"
+
+      - name: gradle chmod
+        run: chmod +x ./gradlew
+
+      - name: gradle build
+        run: ./gradlew build
+
+      - name: create release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          files: build/libs/better-macros-*.jar
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

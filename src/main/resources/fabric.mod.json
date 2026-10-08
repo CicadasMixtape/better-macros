@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "better-macros",
+  "version": "${version}",
+  "name": "better-macros",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/better-macros/icon.png",
+  "accessWidener": "better-macros.accesswidener",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "value": "cicadas.mixtape.bettermacros.BetterMacros",
+        "adapter": "kotlin"
+      }
+    ]
+  },
+  "mixins": [
+    "better-macros.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "${minecraft_version}",
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": ">=${fabric_api_version}",
+    "fabric-language-kotlin": ">=${kotlin_language_version}"
+  }
+}
